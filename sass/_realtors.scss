@@ -1,0 +1,6 @@
+@use "const";
+
+.realtors {
+  background-color: const.$color-secondary;
+  grid-column: col-start 7 / full-end;
+}
