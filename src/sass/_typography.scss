@@ -1,0 +1,60 @@
+@use "const";
+
+@mixin heading {
+  font-family: const.$font-display;
+  font-weight: 400;
+}
+
+.heading {
+  &__2 {
+    @include heading;
+    font-size: 4rem;
+    font-style: italic;
+    line-height: 1;
+
+    &--light {
+      color: const.$color-grey-light-1;
+    }
+
+    &--dark {
+      color: const.$color-grey-dark-1;
+    }
+  }
+
+  &__3 {
+    @include heading;
+    font-size: 1.6rem;
+    color: const.$color-primary;
+    text-transform: uppercase;
+  }
+
+  &__4 {
+    @include heading;
+    font-size: 1.9rem;
+
+    &--light {
+      color: const.$color-grey-light-1;
+    }
+
+    &--dark {
+      color: const.$color-grey-dark-1;
+    }
+  }
+}
+
+.btn {
+  background-color: const.$color-primary;
+  color: #fff;
+  border: none;
+  border-radius: 0;
+  font-family: const.$font-display;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  padding: 1.8rem 3rem;
+  cursor: pointer;
+  transition: all 0.2s;
+
+  &:hover {
+    background-color: const.$color-primary-dark;
+  }
+}

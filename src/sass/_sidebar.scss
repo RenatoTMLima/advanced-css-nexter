@@ -1,0 +1,7 @@
+@use "const";
+
+.sidebar {
+  background-color: const.$color-primary;
+  grid-column: sidebar-start / sidebar-end;
+  grid-row: 1 / -1;
+}
